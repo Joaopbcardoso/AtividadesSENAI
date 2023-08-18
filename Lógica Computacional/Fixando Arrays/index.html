@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(90deg, red, orange);
+            background-size: cover;
+        }
+       
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <div align="center">
+    <button onclick="AtividadeArray()">Clique aqui!</button>
+</div>
+    <script>
+        function AtividadeArray(){
+            var Benvenutti = []
+            Benvenutti.push("João Pedro")
+            Benvenutti.push(" Renata")
+            Benvenutti.push(" André")
+            Benvenutti.push(" Ana Gabriela")
+            alert(Benvenutti)
+            Benvenutti[3] = " Bibi"
+            alert(Benvenutti)
+            var pos = Benvenutti.indexOf("André")
+            Benvenutti.splice(pos, 1)
+            alert(Benvenutti)
+        }
+     </script>
+</body>
+</html>
+
+
+
