@@ -1,0 +1,70 @@
+header{
+    background-color: #FFDE59;
+}
+
+.logo-header{
+    width: 20%;
+}
+
+.carrinho{
+    width: 25px;
+}
+
+.box {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+}
+
+nav li{
+    display: inline;    
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    cursor: pointer; 
+    font-size: 15px;
+    color: #A51211;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav a:hover{
+    color: #008037;
+}
+
+.menu-pizzaria{
+    width:600px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-item{
+    border: #A51211 solid 2px;
+    margin: 10px;
+    padding: 20px;
+    width: 150%;
+}
+
+.menu-pizzaria h3{
+    margin: 0 5px 10px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
