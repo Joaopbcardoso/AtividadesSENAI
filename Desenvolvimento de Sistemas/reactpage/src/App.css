@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  width: 100vw;
+  background-color: #A1FFC7;
+  box-shadow: 10px 5px 5px black;
+  padding: 20px;
+}
+
+.logo{
+  width: 50vh;
+}
+
+.sobre-nos{
+  color:#fff
+}
+
+.banner{
+  margin: 20px;
+}
+
+.carros{
+  width: 20%;
+  margin: 40px;
+  transition: 1s;
+  border: solid 2px #000;
+}
+
+.carros:hover{
+  transition: 1s;
+  transform: scale(1.08);
+}
+
+footer{
+  background-color: #242323;
+  justify-content: end;
+}
+
+footer p{
+  color: #fff;
+  padding: 20 px;
+}
