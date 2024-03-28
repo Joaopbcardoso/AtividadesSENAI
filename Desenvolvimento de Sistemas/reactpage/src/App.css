@@ -3,6 +3,9 @@
   padding: 0;
   text-align: center;
 }
+body{
+  background-color: #242323 ;
+}
 
 header {
   width: 100vw;
@@ -35,12 +38,29 @@ header {
   transform: scale(1.08);
 }
 
+.button-sobre{
+  padding: 20px 50px;
+  margin: 30px;
+  cursor: pointer;
+  background-color: #A1FFC7;
+  transition: 1s;
+}
+.button-sobre:hover {
+  background-color:rgb(17, 235, 158);
+  transition: 1s;
+}
+
 footer{
-  background-color: #242323;
   justify-content: end;
+  background-color: #000;
 }
 
 footer p{
   color: #fff;
   padding: 20 px;
+}
+
+footer img{
+  width: 50vh;
+  padding: 20px 50px;
 }
