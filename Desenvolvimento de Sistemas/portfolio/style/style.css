@@ -1,6 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+}
+
 header .logo{
     width: 10vh;
     margin: 0 0 0 20px;
@@ -23,9 +30,20 @@ h1{
 }
 
 .banner{
-    height: 614px;
-    width: 983px;
+    background-image: url('../img/portfolio.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     width: 100%;
+    top: 0;
+}
+.banner2{
+    background-image: url('../img/linguagens.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
 }
 
 .navbar{
