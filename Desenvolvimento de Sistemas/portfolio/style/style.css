@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+header .logo{
+    width: 10vh;
+    margin: 0 0 0 20px;
+}
+
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    font-family: arvo;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #464646;
+}
+
+.banner{
+    height: 614px;
+    width: 983px;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    text-decoration: none;
+    margin-right: 5vh;
+
+
+& li a{
+    transition: 0.2s;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #353232;
+    font-size: 20px;
+
+&:hover{transition: 0.2s;
+    color: rgb(146, 139, 139);}
+}}
+
+
+
