@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria</title>
+    <script src="js/vendas.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Papelaria - Controle de Vendas</h1>
+    </header>
+    <main>
+        <div>
+            <label for="produtos">Escolha um Produto</label>
+            <select name="itens" id="itens" onchange="updateQuantityInput()">
+                <option value="Caneta">Caneta</option>
+                <option value="Lapis">Lápis</option>
+                <option value="Borracha">Borracha</option>
+                <option value="Regua">Régua</option>
+                <option value="Caderno">Caderno</option>
+                <option value="Lapiseira">Lapiseira</option>
+            </select>
+        </div>
+        <div>
+            <label for="estoquenumber">Quantidade em Estoque</label>
+            <input type="number" id="estoquenumber" oninput="updateStockFromInput()">
+        </div>
+        <label for="quantidade">Quantidade:</label>
+        <input name="quantidade" type="number">
+        <button onclick="comprarItem()">Comprar</button>
+        </select>
+    </main>
+</body>
+</html>
