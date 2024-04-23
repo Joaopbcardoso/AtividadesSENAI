@@ -12,7 +12,7 @@
     </header>
     <main>
         <div>
-            <label for="produtos">Escolha um Produto</label>
+            <label for="itens">Escolha um Produto</label>
             <select name="itens" id="itens" onchange="updateQuantityInput()">
                 <option value="Caneta">Caneta</option>
                 <option value="Lapis">Lápis</option>
@@ -24,12 +24,12 @@
         </div>
         <div>
             <label for="estoquenumber">Quantidade em Estoque</label>
-            <input type="number" id="estoquenumber" oninput="updateStockFromInput()">
+            <button onclick="manipulaDados('-')" id="menos" data-controle="+">-</button>
+            <input value="0" type="text" class="controle-contador" id="estoquenumber" data-contador oninput="updateStockFromInput()">
+            <button onclick="manipulaDados('+')" id="mais" data-controle="-">+</button>
+            
         </div>
-        <label for="quantidade">Quantidade:</label>
-        <input name="quantidade" type="number">
-        <button onclick="comprarItem()">Comprar</button>
-        </select>
+        <p>R$<p id="valor"></p></p>
     </main>
 </body>
 </html>
