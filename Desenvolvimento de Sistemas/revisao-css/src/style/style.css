@@ -6,7 +6,8 @@
 .container{
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 70px;
 & p{
@@ -24,11 +25,12 @@
 }
 
 .imagem{
+    display: flex;
     width: 100%;
+    justify-content: center;
     & img{
         border: solid 2px #27589D;
         border-radius: 30px;
-        justify-content: center;
     }
 }
 
