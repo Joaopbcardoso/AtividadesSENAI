@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+button{
+    width: 75px;
+    height: 75px;
+    vertical-align: top;
+}
+
+.cp{
+    background-image: url("cp.png");
+}
+.cp:hover{
+    filter:brightness(1.2);
+}
+
+.cb{
+    background-image: url("cb.png");
+}
+.cb:hover{
+    filter: brightness(0.89);
+}
