@@ -2,12 +2,22 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    justify-content: center;
 }
+
+#tabuleiro{
+    border-image: url('cp.png') 30 / 20px round;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    }
 
 button{
     width: 75px;
     height: 75px;
-    vertical-align: top;
+    vertical-align: top; 
 }
 
 .cp{
