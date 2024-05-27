@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+body{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 #tabuleiro{
@@ -12,6 +19,8 @@
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     }
 
 button{
