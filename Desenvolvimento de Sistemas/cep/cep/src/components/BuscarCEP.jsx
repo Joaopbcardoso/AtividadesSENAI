@@ -3,6 +3,7 @@ import { useState } from "react"
 export default function BuscarCEP(){
     const [cep, setCep] = useState('')
     const [endereco, setEndereco] = useState(null)
+    const [error, setError] = useState(null)
 
     const fetchData = async () => {
         try{
@@ -14,16 +15,23 @@ export default function BuscarCEP(){
         }
     } 
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        fetchData(cep);
+      };
+
     return(
     <div className="content">
         <h1>Buscar Endereço Pelo CEP</h1>
-        <input 
-        type="text"
-        value={cep}
-        placeholder="Digite seu CEP"
-        onChange={(e) => setCep(e.target.value)} 
-        />
-        <button onClick={fetchData}>Buscar</button>
+        <form onSubmit={handleSubmit}>
+            <input 
+            type="text"
+            value={cep}
+            placeholder="Digite seu CEP"
+            onChange={(e) => setCep(e.target.value)} 
+            />
+            <button type="submit" className="submit">Buscar</button>
+        </form>
 
         {endereco && (
             <div>
@@ -33,6 +41,7 @@ export default function BuscarCEP(){
                 <p>UF: {endereco.uf}</p>
             </div>
         )}
+        \ 
     </div>
   )
 }
