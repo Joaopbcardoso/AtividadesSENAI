@@ -1,16 +1,15 @@
-import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 export default function Home(){
   return(
-    <header>
-        <nav>
-            <div>
-                <ul>
-                    <li><Link to={'/busca-cep'}>Pesquisar um CEP </Link></li>
-                    <li><Link to={'/busca-cep'}>Pesquisar um CEP </Link></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <>
+    <Header />
+    <main>
+        <figure>
+            <img className='banner' src="banner.png" alt="" />
+        </figure>
+    </main>
+    </>
   )
+ 
 }

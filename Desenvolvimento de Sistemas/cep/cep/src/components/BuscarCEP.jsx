@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Header from "./Header"
 
 export default function BuscarCEP(){
     const [cep, setCep] = useState('')
@@ -21,26 +22,29 @@ export default function BuscarCEP(){
       };
 
     return(
-    <div className="content">
-        <h1>Buscar Endereço Pelo CEP</h1>
-        <form onSubmit={handleSubmit}>
-            <input 
-            type="text"
-            value={cep}
-            placeholder="Digite seu CEP"
-            onChange={(e) => setCep(e.target.value)} 
-            />
-            <button type="submit" className="submit">Buscar</button>
-        </form>
+    <>
+        <Header />
+        <div className="content">
+            <h1>Buscar Endereço Pelo CEP</h1>
+            <form onSubmit={handleSubmit}>
+                <input 
+                type="text"
+                value={cep}
+                placeholder="Digite seu CEP"
+                onChange={(e) => setCep(e.target.value)} 
+                />
+                <button type="submit" className="submit">Buscar</button>
+            </form>
 
-        {endereco && (
-            <div>
-                <p>Rua: {endereco.logradouro}</p>
-                <p>Bairro: {endereco.bairro}</p>
-                <p>Cidade: {endereco.localidade}</p>
-                <p>UF: {endereco.uf}</p>
-            </div>
-        )}
-    </div>
+            {endereco && (
+                <div>
+                    <p>Rua: {endereco.logradouro}</p>
+                    <p>Bairro: {endereco.bairro}</p>
+                    <p>Cidade: {endereco.localidade}</p>
+                    <p>UF: {endereco.uf}</p>
+                </div>
+            )}
+        </div>
+    </>
   )
 }
