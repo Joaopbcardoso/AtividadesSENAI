@@ -41,7 +41,6 @@ export default function BuscarCEP(){
                 <p>UF: {endereco.uf}</p>
             </div>
         )}
-        \ 
     </div>
   )
 }
