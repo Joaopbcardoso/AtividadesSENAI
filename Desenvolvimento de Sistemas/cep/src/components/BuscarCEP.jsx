@@ -25,9 +25,10 @@ export default function BuscarCEP(){
     <>
         <Header />
         <div className="content">
-            <h1>Buscar Endereço Pelo CEP</h1>
+            <h1 className="title">Buscar Endereço Pelo CEP</h1>
             <form onSubmit={handleSubmit}>
                 <input 
+                className="input"
                 type="text"
                 value={cep}
                 placeholder="Digite seu CEP"
@@ -37,11 +38,11 @@ export default function BuscarCEP(){
             </form>
 
             {endereco && (
-                <div>
-                    <p>Rua: {endereco.logradouro}</p>
-                    <p>Bairro: {endereco.bairro}</p>
-                    <p>Cidade: {endereco.localidade}</p>
-                    <p>UF: {endereco.uf}</p>
+                <div className="info">
+                    <p><b>Rua: </b> {endereco.logradouro}</p>
+                    <p><b>Bairro: </b>{endereco.bairro}</p>
+                    <p><b>Cidade: </b>{endereco.localidade}</p>
+                    <p><b>UF: </b>{endereco.uf}</p>
                 </div>
             )}
         </div>
