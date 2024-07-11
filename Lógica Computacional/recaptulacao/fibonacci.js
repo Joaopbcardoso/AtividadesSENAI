@@ -7,4 +7,4 @@ function sequenciaFibonacci(number){
     }
     return fibonacci;
     }
-    console.log(sequenciaFibonacci(10))
+    console.log(sequenciaFibonacci(5))
