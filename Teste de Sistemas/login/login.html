@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de logins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <p>Digite seu usuario e senha</p>
+        <form id="formulario" onsubmit="login()">
+        <input type="text" placeholder="Usuario" id="usuario">
+        <input type="text" placeholder="Senha" id="senha">
+
+        <button id="entrar" type="submit">Entrar</button>
+    </form>
+    <span id="erro">Usuario ou senha incorreta</span>
+    </div>
+
+    <script>
+        function login(){
+            event.preventDefault();
+            const usuario = document.getElementById('usuario').value
+            const senha = document.getElementById('senha').value
+
+            if (usuario === 'admin' && senha === 'admin'){
+                alert('Login efetuado')
+                return true
+            }else{
+                document.getElementById('erro').style.display = 'block'
+                return false
+            }
+        }
+    </script>
+</body>
+</html>
