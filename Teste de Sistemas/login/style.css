@@ -1,9 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
@@ -21,17 +18,18 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
-    text-align: center;
-    margin-bottom: 10px;
-}
+
 
 form {
     margin-bottom: 20px;
     padding: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
+    && label {
+        text-align: start;
+        margin-bottom: 10px;
+    }
 }
 
 input {

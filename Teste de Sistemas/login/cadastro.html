@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        
+        <form id="formulario" onsubmit="login()">
+        <label>Nome</label>
+        <input type="text" placeholder="nome" id="usuario">
+        <label>E-mail</label>
+        <input type="text" placeholder="ex: abc@gmail.com" id="senha">
+        <label>Senha</label>
+        <input type="text" placeholder="Senha" id="senha">
+        <label>Confirme a Senha</label>
+        <input type="text" placeholder="Senha" id="senha">
+        <p>Já possue um cadastro? <a href="./login.html">Fazer Login</a></p>
+
+        <button id="entrar" type="submit">Entrar</button>
+    </form>
+    <span id="erro">Usuario ou senha incorreta</span>
+    </div>
+</body>
+</html>
